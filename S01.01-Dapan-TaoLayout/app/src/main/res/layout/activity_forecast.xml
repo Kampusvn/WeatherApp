@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!--Hoàn thành (1) Đổi ConstraintLayout thành FrameLayout-->
+<!--Hoàn thành (7) Bỏ dòng gán ID-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Hoàn thành (8) Bao TextView bằng ScrollView-->
+    <!--Hoàn thành (9) Đặt width cho ScrollView là match_parent và height là wrap_content-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Hoàn thành (2) Đổi ID của TextView thành tv_weather_data-->
+        <!--Hoàn thành (3) Đặt padding 16dp cho TextView-->
+        <!--Hoàn thành (4) Đặt text size 20sp-->
+        <!--Hoàn thành (5) Xóa bỏ các thuộc tính có chữ constraint bên trong-->
+        <!--Hoàn thành (6) Xóa dòng chữ mặc định của TextView-->
+        <TextView
+            android:id="@+id/tv_weather_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="20sp" />
+    </ScrollView>
+</FrameLayout>
