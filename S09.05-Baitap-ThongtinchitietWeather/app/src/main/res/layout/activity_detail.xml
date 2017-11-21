@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- TODO (1) Chuyển FrameLayout thành vertical LinearLayout -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <!-- TODO (2) Bỏ TextView tv_display_weather -->
+    <!-- Văn bản mô tả bản tóm tắt thời tiết cho một ngày -->
+    <TextView
+        android:id="@+id/tv_display_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        tools:text="Saturday, October 1 - Sunny - 78° / 63°"/>
+    <!-- TODO (3) Thêm TextView cho ngày tháng của ngày được chọn -->
+    <!-- TODO (4) Thêm TextView cho description của ngày được chọn -->
+    <!-- TODO (5) Thêm TextView cho nhiệt độ cao của ngày được chọn -->
+    <!-- TODO (6) Thêm TextView cho nhiệt độ thấp của ngày được chọn -->
+    <!-- TODO (7) Thêm TextView cho độ ẩm của ngày được chọn -->
+    <!-- TODO (8) Thêm TextView cho áp suất của ngày được chọn -->
+    <!-- TODO (9) Thêm TextView cho tốc độ gió của ngày được chọn -->
+
+</FrameLayout>
