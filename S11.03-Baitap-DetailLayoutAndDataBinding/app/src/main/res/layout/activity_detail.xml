@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- TODO (31) Xóa layout cũ -->
+
+<!-- TODO (35) Bao layout mới bằng <layout/> tags để làm việc với data binding -->
+
+<!-- TODO (34) Tạo LinearLayout để chứa 2 layout có kích cỡ bằng nhau-->
+
+<!-- TODO (25) Tạo layout là primary_weather_info.xml -->
+<!-- TODO (26) Bao layout bằng <layout/> tags để làm việc với data binding -->
+<!-- TODO (27) Sử dụng ConstraintLayout, tạo layout chứa thông tin thời tiết chính -->
+<!-- TODO (32) Include primary_weather_info layout -->
+
+<!-- TODO (28) Tạo layout là extra_weather_details.xml -->
+<!-- TODO (29) Bao layout bằng <layout/> tags để làm việc với data binding -->
+<!-- TODO (30) Sử dụng ConstraintLayout, tạo layout để hiển thị thêm thông tin về thời tiết -->
+<!-- TODO (33) Include extra_weather_details layout -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <!-- Ngày tháng -->
+    <TextView
+        android:id="@+id/date"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Saturday, September 24"/>
+
+    <!-- Description của ngày được chọn -->
+    <TextView
+        android:id="@+id/weather_description"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Rainy"/>
+
+    <!-- Nhiệt độ cao nhất -->
+    <TextView
+        android:id="@+id/high_temperature"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="19\u00b0"/>
+
+    <!-- Nhiệt độ thấp nhất -->
+    <TextView
+        android:id="@+id/low_temperature"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="10\u00b0"/>
+
+    <!-- Độ ẩm  -->
+    <TextView
+        android:id="@+id/humidity"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="38%"/>
+
+    <!-- Áp suất  -->
+    <TextView
+        android:id="@+id/pressure"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="995 hPa"/>
+
+    <!-- Tốc độ gió -->
+    <TextView
+        android:id="@+id/wind"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="4km/h NW"/>
+
+</LinearLayout>
